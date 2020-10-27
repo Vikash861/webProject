@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSmasher</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#foodid{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+.navbar ul li a{
+    text-decoration: none; 
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar ul li a:hover{
+color: yellow;
+}
+
+.li{
+    display: flex;
+padding: 10px;
+margin-left: 60vw;
+margin-top: 3vh;
+}
+
+.navbar{
+    display: flex;
+}
+.middle_heading{
+    text-align: center;
+    margin-top: 15vh;
+    font-family: sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.middle_para{
+    text-align: center;
+    margin-top: 1vh;
+    font-family: 'Nunito', sans-serif;
+    color: yellow;
+}
+
+/* Button styling */
+#btn{
+    cursor: pointer; 
+    border: 1px solid #ffffff; 
+    background-color: transparent; 
+    height: 60px; 
+    width: 220px;
+    font-weight: bold;
+    color: #660707; 
+    font-size: 1.5em; 
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+    margin: 2vh 40vw;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+    outline: none;
+}
+
+
+
+
+#btn:hover{
+    background-color: white;
+}
+
+
+/* Form styling */
+
+#containerform
+  {
+    color:yellow;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form{
+    margin: 10px 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.insidestyleform{
+    padding: 10px;
+    width: 600px;
+    height: 40px;
+    border-radius: 60px;
+    border: 2px solid rgb(255, 230, 3);
+    font-size: 15px;
+    outline: none;
+    transition: 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.insidestyleform:hover{
+    color: black;
+    font-size: 20px;
+    background-color:rgb(255,230,3) ;
+
+}
+
+.sumbitbutton{
+height: 50px;
+width: 200px;
+background-color: transparent;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: x-large;
+border-radius: 30px;
+border: 2px solid rgb(255, 230, 3) ;
+transition: 1s;
+
+}
+.sumbitbutton:hover{
+    background-color:  rgb(255, 230,3);
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="image_navbar">
+
+
+        <nav class="navbar">
+            <span id="foodid">
+                FoodSmasher
+            </span>
+            <ul>
+                <div class="li">
+                    <li><a style="color: yellow;" href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <!-- Middle sectin -->
+    <h1 class="middle_heading">Welcome to FoodSmasher</h1>
+    <p class="middle_para">WE ARE SERVER ONLY FRESHEST INGREDIENTS</p>
+
+    <button onclick="displayNone()" id="btn">BOOK YOUR TABLE</button>
+    <!-- formsection -->
+    <div id="containerform">
+        <form action="" >
+            <div class="form name">
+
+                Name:<input type="text" name="userName" id="name" placeholder="Enter you Name" class="insidestyleform">
+            </div>
+            <div class="form lastName">
+                lastName:<input type="text" name="userName" id="lastname" placeholder="Last Name" class="insidestyleform">
+            </div>
+            <div class="form mobile">
+                Number:<input type="number" name="userNumber" id="number" placeholder="Mobile Number" class="insidestyleform">
+            </div>
+            <div class="form addres">
+                Address:<input type="text" name="userAddres" id="addres" placeholder="Addres(State,City,Landmark/Road,Galinumber,Home/Office/Apartment Number)" class="insidestyleform">
+            </div>
+            <div class="form sumbit">
+                <input type="submit" value="Sumbit Now" class="sumbitbutton">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
